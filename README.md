@@ -4,6 +4,6 @@ Tutorial de lógica programação com a plataforma node.
 ## Autor
 Vinicius Barbosa.
 ## Links 
-[Node] (https://nodejs.org/en/)
+[Node](https://nodejs.org/en/)
 
-[VScode] (https://code.visualstudio.com/download)
+[VScode](https://code.visualstudio.com/download)
