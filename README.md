@@ -7,3 +7,5 @@ Vinicius Barbosa.
 [Node](https://nodejs.org/en/)
 
 [VScode](https://code.visualstudio.com/download)
+
+[npm repository](https://www.npmjs.com/package/repository)
