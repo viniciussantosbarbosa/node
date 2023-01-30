@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+/* COMETÁRIOS */
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Secular+One&display=swap');
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(236, 236, 236);   
+    font-family: 'Secular One', sans-serif;
+    font-size: 1em; 
+}
+
+.container{
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ===== SMARTPHONE PORTRAIT ===== */
+
+/* ===== SMARTPHONE LANDSCAPE ===== */
+@media (min-width: 576px){
+    body{
+        background-color: rgb(251, 255, 0);
+    }
+
+    .container{
+        max-width: 540px;
+    }
+}
+/* ===== TABLET PORTRAIT ===== */
+@media (min-width: 768px){
+    body{
+        background-color: rgb(48, 218, 25);
+    }
+
+    .container{
+        max-width: 720px;
+    }
+}
+/* ===== TABLET LANDSCAPE ===== */
+@media (min-width: 992px){
+    body{
+        background-color: rgb(31, 204, 195);
+    }
+
+    .container{
+        max-width: 960px;
+    }
+}
+
+/* ========= PC =========== */
+
+@media (min-width: 1200px){
+    body{
+        background-color: rgb(255, 0, 157);
+    }
+
+    .container{
+        max-width: 1140px;
+    }
+}
+
