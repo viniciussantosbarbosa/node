@@ -29,6 +29,16 @@ body{
     justify-content: space-between;
 }
 
+.flex2{
+    display: flex;
+    align-items: center;
+}
+
+.flex3{
+    display: flex;
+    flex-direction: column;
+}
+
 .botao{
     text-decoration: none;
     color: #fff;
@@ -116,13 +126,95 @@ main h2{
 
 }
 
+/* SEÇÃO SOBRE */
 
+#sobre{
+    padding: 50px 0px;
+    background: url(img/background1.jpg);
+    background-size: cover;
+    background-position: center;
+}
 
+#destaque_sobre{
+    display: none;
+}
+
+#texto_sobre{
+    color: #FFF;
+    padding: 0px 10px;
+}
+
+#texto_sobre h2{
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.topico_sobre{
+    margin-top: 20px;
+}
+
+.topico_sobre img{
+    margin-right: 10px;
+}
+
+/* SEÇÃO ONE PAGE */
+
+#onepage{
+    padding: 50px 10px;
+}
+
+#onepage h2{
+    margin-bottom: 25px;
+    font-size: 1.2em;
+}
+
+#onepage p{
+    margin-bottom: 25px;
+    font-size: 1.2em;
+}
+
+#video iframe{
+    width: 340px;
+    height: 191px;
+
+}
+/* SEÇÃO WIREFRAME */
+
+#wireframe{
+    padding: 50px 0px;
+    background: url(img/background1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#texto_wire{
+    color: #fff;
+    padding: 0px 10px;
+
+}
+
+#texto_wire2{
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+#testo_wire p{
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+#texto_wire span{
+    display: none;
+}
+
+#qrcode{
+    display: none;
+}
 /* ====== SMARTPHONE LANDSCAPE======*/ 
 @media(min-width: 576px){
-    body{
+    /* body{
         background: #f4f407;
-    }
+    } */
 
     .container{
         max-width: 540px;
@@ -135,9 +227,10 @@ main h2{
 
 /* ====== TABLET PORTRAIT ======*/
 @media(min-width: 768px){
-    body{
+    /* body{ 
         background: #07c1f4;
     }
+    */
     .container{
         max-width: 720px;
     }
@@ -156,9 +249,9 @@ main h2{
 }
 /* ====== TABLET LANDSCAPE ======*/
 @media(min-width: 992px){
-    body{
+    /* body{ 
         background: #f48d07;
-    }
+    } */
     .container{
         max-width: 960px;
     }
@@ -172,9 +265,9 @@ main h2{
 
 /*============= PC ==============*/
 @media(min-width: 1200px){
-    body{
+    /* body{
         background: #e007f4;
-    }
+    } */
     .container{
         max-width: 1140px;
     }
@@ -215,6 +308,42 @@ nav ul li a{
 
 nav ul li a:hover{
     color: #4f2bee;
+}
+
+
+ /*SEÇÃO SOBRE*/
+
+ #destaque_sobre{
+    display: inline;
+ }
+
+ #destaque_sobre img{
+    border-radius: 50%;
+    margin-right: 50px;
+ }
+
+ #sobre{
+    background-attachment: fixed;
+ }
+
+ .flex3{
+    flex-direction: row;
+    align-items: center;
+ }
+
+/* SEÇÃO WIREFRAME */
+#wireframe{
+    background-attachment: fixed;
+}
+
+#texto_wire span{
+    display: inline;
+    color: #004560;
+    font-weight: 700;
+}
+
+#qrcode{
+    display: inline;
 }
 
 }
