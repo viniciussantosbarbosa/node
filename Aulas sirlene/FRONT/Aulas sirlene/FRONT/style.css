@@ -1,8 +1,9 @@
 @charset "UTF-8";
 
-/* COMENTÁRIOS */´
+/* COMENTÁRIOS */
 
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Secular+One&display=swap');
+
 
 
 *{
@@ -39,6 +40,23 @@ body{
     flex-direction: column;
 }
 
+.flex4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.flex5{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.flex6{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 .botao{
     text-decoration: none;
     color: #fff;
@@ -49,6 +67,43 @@ body{
     border: 2px solid #fff;
     border-radius: 25px;
 
+}
+
+/*CARDS */
+
+.card{
+    margin-top: 25px;
+    width: 338px;
+    height: 520px;
+    background: #e8e8e8;
+    border: 1px solid #a1a1a1;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.card img{
+    border-radius: 25px 25px 0px 0px;
+}
+
+.card h2{
+    margin-top: 15px;
+}
+
+.card p{
+    text-align: left;
+    padding: 10px 30px 50px;
+    color: #434343;
+}
+
+.card a{
+    padding: 10px 100px;
+    border: 0;
+}
+
+#topo{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
 }
 
 /* ====== SMARTPHONE PORTRAIT======*/
@@ -176,6 +231,7 @@ main h2{
 #video iframe{
     width: 340px;
     height: 191px;
+    border: 0;
 
 }
 /* SEÇÃO WIREFRAME */
@@ -210,6 +266,86 @@ main h2{
 #qrcode{
     display: none;
 }
+
+/*CARDS - SEÇÃO CONTEÚDO */
+
+#conteudo{
+    padding: 50px 0px; 
+}
+
+#conteudo h2{
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 2em;
+}
+
+#todos_conteudos{
+    margin-top: 50px;
+    text-align: center;
+}
+
+#todos_conteudos a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+/* RODAPÉ */
+address{
+    padding: 35px 10px 50px 10px;
+    background: #9b9b9b;
+    color: #FFF;
+}
+
+address a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+address img{
+    padding-top: 15px;
+}
+
+#icone_local{
+    display: none;
+}
+
+#dados{
+    display: none;
+}
+
+#dados{
+    margin: 30px 0px 15px 0px;
+}
+
+#google_maps{
+    display: none;
+}
+
+footer{
+    padding: 50px;
+    background: #343538;
+    font-size: 0.87em;
+    color: #FFF;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+.flex5{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#redes_sociais{
+    margin-bottom: 25px;  
+}
+
 /* ====== SMARTPHONE LANDSCAPE======*/ 
 @media(min-width: 576px){
     /* body{
@@ -222,6 +358,10 @@ main h2{
 
     main h1, main h2{
         text-shadow: #000 0.05em 0.05em 0.05em;
+    }
+
+    #redes_sociais{
+        margin: 0;
     }
 }
 
@@ -343,6 +483,26 @@ nav ul li a:hover{
 }
 
 #qrcode{
+    display: inline;
+}
+.flex6{
+    flex-direction: row-reverse;
+}
+
+address{
+    padding-top: 50px;
+
+}
+
+#icone_local{
+    display: inline;
+}
+
+#icone_mapa{
+    display: none;
+}
+
+#google_maps{
     display: inline;
 }
 
